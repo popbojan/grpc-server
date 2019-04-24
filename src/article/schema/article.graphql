@@ -1,0 +1,16 @@
+type Article {
+    "Id of the article e.g. id: '7e55c381308c4f06ded7d43c7f594a35'"
+    id: ID!
+    "Article Title"
+    title: String
+    "Article type e.g. TEXTARTICLE, PHOTO, VIDEO"
+    articleType: ArticleType
+    "Article's body text. It might include generated text from the rich text editor"
+    bodyText: String
+}
+
+enum ArticleType {
+    TEXTARTICLE
+    PHOTO
+    VIDEO
+}

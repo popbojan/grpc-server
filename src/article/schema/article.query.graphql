@@ -1,0 +1,11 @@
+type Query {
+    """
+    Get article by it's ID
+    * articleId: Article's id. Mandatory param
+    """
+    getArticleByArticleId(articleId: ID!): Article
+    """
+    Get list of articles
+    """
+    getArticles: ListArticles
+}
